@@ -5,13 +5,13 @@
 -- 2. the numerical length of patient's last_name
 -- 3. year of patient's birth_date
 SELECT 
-		p.patient_id, 
-		CONCAT(p.patient_id, LENGTH(p.last_name), YEAR(p.birth_date)) AS password
+    p.patient_id, 
+    CONCAT(p.patient_id, LENGTH(p.last_name), YEAR(p.birth_date)) AS password
 FROM 
-		patients AS p 
+    patients AS p 
 JOIN 
-		admissions AS a 
+    admissions AS a 
 ON 
-		p.patient_id = a.patient_id
+    p.patient_id = a.patient_id
 GROUP BY 
-		p.patient_id;
+    p.patient_id;
