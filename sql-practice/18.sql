@@ -1,9 +1,9 @@
 -- Show unique first names from the patients table which only occurs once in the list.
 SELECT 
-		DISTINCT first_name
+    DISTINCT first_name
 FROM 
-		patients
+    patients
 GROUP BY 
-		first_name
+    first_name
 HAVING 
-		COUNT(first_name) = 1; 
+    COUNT(first_name) = 1;
