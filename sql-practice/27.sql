@@ -1,12 +1,12 @@
 -- Show all allergies ordered by popularity. Remove NULL values from query.
 SELECT 
-		allergies, 
-		COUNT(*) AS popularity
+    allergies, 
+    COUNT(*) AS popularity
 FROM 
-		patients
+    patients
 WHERE 
-		COALESCE(allergies, '') <> ''
+    COALESCE(allergies, '') <> ''
 GROUP BY 
-		allergies
+    allergies
 ORDER BY 
-		popularity DESC;
+    popularity DESC;
