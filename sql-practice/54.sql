@@ -1,8 +1,8 @@
 -- Show the category_name and description from the categories table sorted by category_name.
 SELECT 
-		category_name, 
+    category_name, 
     description 
 FROM 
-		categories
+    categories
 ORDER BY
-		category_name;
+    category_name;
