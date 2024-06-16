@@ -1,7 +1,7 @@
 -- Show all the even numbered Order_id from the orders table
 SELECT 
-		order_id
+    order_id
 FROM 
-		orders
+    orders
 WHERE
-		order_id % 2 ==0;
+    order_id % 2 == 0;
