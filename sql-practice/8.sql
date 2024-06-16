@@ -4,4 +4,4 @@ SELECT
 FROM 
     patients
 WHERE 
-  YEAR(birth_date) = 2010;
+    YEAR(birth_date) = 2010;
