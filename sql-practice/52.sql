@@ -13,4 +13,7 @@ LEFT JOIN
 ON 
     a.attending_doctor_id = d.doctor_id
 GROUP BY 
-    d.doctor_id, full_name, specialty, admission_year;
+    d.doctor_id, 
+    full_name, 
+    specialty, 
+    admission_year;
