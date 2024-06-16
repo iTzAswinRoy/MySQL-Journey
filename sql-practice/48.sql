@@ -5,18 +5,19 @@
 -- Their weight would be between 60kg and 80kg
 -- Their patient_id is an odd number
 -- They are from the city 'Kingston'
-SELECT * 
+SELECT 
+    * 
 FROM 
-		patients
+    patients
 WHERE 
-		first_name LIKE '__r%' 
+    first_name LIKE '__r%' 
 AND 
-		gender = 'F' 
+    gender = 'F' 
 AND 
-		(MONTH(birth_date) = 5 OR MONTH(birth_date) = 12)
+    (MONTH(birth_date) = 5 OR MONTH(birth_date) = 12)
 AND 
-		weight BETWEEN 60 AND 80
+    weight BETWEEN 60 AND 80
 AND 
-		patient_id % 2 != 0
+    patient_id % 2 != 0
 AND 
-		city = 'Kingston';
+    city = 'Kingston';
