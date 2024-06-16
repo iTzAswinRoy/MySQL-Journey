@@ -1,7 +1,7 @@
 -- Show the difference between the largest weight and smallest weight for patients with the last name 'Maroni'
 SELECT 
-		(MAX(weight) - MIN(weight)) AS difference
+    (MAX(weight) - MIN(weight)) AS difference
 FROM 
-		patients
+    patients
 WHERE 
-		last_name = 'Maroni';
+    last_name = 'Maroni';
