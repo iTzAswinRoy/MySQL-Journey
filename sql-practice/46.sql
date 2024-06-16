@@ -3,17 +3,19 @@
 -- Give each patient a 'Yes' if they have insurance, and a 'No' if they don't have insurance. 
 -- Add up the admission_total cost for each has_insurance group.
 SELECT 
-		(CASE 
-				WHEN patient_id % 2 == 0 THEN 'Yes'
+    (CASE 
+        WHEN 
+            patient_id % 2 == 0 THEN 'Yes'
         ELSE 
-		        'No'
+            'No'
         END) AS insurance, 
         SUM(CASE 
-			        WHEN patient_id % 2 == 0  THEN 10
+              WHEN 
+                  patient_id % 2 == 0  THEN 10
               ELSE 
-					        50
+                  50
               END) AS total
 FROM 
-		admissions
+    admissions
 GROUP BY 
-		insurance;
+    insurance;
