@@ -5,6 +5,6 @@
 -- d happens to equal the maximum value in Western Longitude (LONG_W in STATION).
 -- Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
 SELECT 
-		ROUND(ABS(MAX(LAT_N) - MIN(LAT_N)) + ABS(MAX(LONG_W) - MIN(LONG_W)),4) AS Manhattan_Distance
+    ROUND(ABS(MAX(LAT_N) - MIN(LAT_N)) + ABS(MAX(LONG_W) - MIN(LONG_W)),4) AS Manhattan_Distance
 FROM 
-		STATION;
+    STATION;
